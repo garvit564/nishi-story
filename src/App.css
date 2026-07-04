@@ -1050,56 +1050,233 @@ drop-shadow(
 }
 
 
+/* ============ FINAL MOBILE FIX ============ */
 
 @media(max-width:600px){
 
 
-.storyText{
+body{
+overflow-y:auto;
+}
 
-font-size:38px;
+
+
+/* common pages */
+
+.memoryPage,
+.qualityPage,
+.letterPage,
+.questionPage{
+
+min-height:100vh;
+
+height:auto;
+
+padding:30px 15px;
+
+overflow-y:auto;
+
+justify-content:flex-start;
 
 }
 
 
-h2{
+/* memory */
 
-font-size:40px;
+
+.memoryTitle{
+
+font-size:35px;
+
+margin-top:20px;
+
+margin-bottom:20px;
 
 }
 
 
 .memoryBox{
 
-gap:15px;
+width:100%;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:20px;
 
 }
+
 
 
 .polaroid{
 
-width:160px;
+width:90% !important;
 
-height:210px;
+max-width:300px;
+
+
+height:auto !important;
+
+min-height:auto;
+
+
+padding:22px;
+
+
+overflow:visible;
 
 }
 
 
-.questionPage h1{
+
+.polaroid h3{
+
+font-size:21px;
+
+line-height:1.2;
+
+margin-bottom:15px;
+
+}
+
+
+
+.polaroid p{
+
+font-size:15px;
+
+line-height:1.5;
+
+word-wrap:break-word;
+
+}
+
+
+
+/* qualities page */
+
+
+.qualityPage h1{
 
 font-size:35px;
 
+margin-top:20px;
+
+text-align:center;
+
 }
 
 
-.buttons{
+
+.wordBox{
+
+margin:25px 0;
 
 gap:15px;
 
 }
 
 
+
+.word{
+
+font-size:20px;
+
+padding:16px 22px;
+
 }
 
+
+
+/* letter */
+
+.letterCard{
+
+margin-top:20px;
+
+width:95%;
+
+padding:25px 20px;
+
+}
+
+
+
+.letterCard h2{
+
+font-size:42px;
+
+margin-top:0;
+
+}
+
+
+
+.letterCard p{
+
+font-size:16px;
+
+line-height:1.45;
+
+}
+
+
+
+/* buttons */
+
+
+.nextBtn{
+
+margin-top:20px;
+
+margin-bottom:30px;
+
+}
+
+
+
+button{
+
+font-size:16px;
+
+padding:12px 28px;
+
+}
+
+
+
+/* final */
+
+.questionPage h1{
+
+font-size:34px;
+
+}
+
+
+
+.buttons{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+/* story */
+
+.storyText{
+
+font-size:34px;
+
+}
+
+
+}
 
 
 
